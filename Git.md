@@ -25,7 +25,10 @@
             * 就近原则：项目级别优先于系统用户级别，二者都有时采用项目级别的签名
             * 如果只有系统用户级别的签名，就医系统用户级别的签名为准
             * 不允许二者都没有
-
+3. 提交操作：
+    * `git add filename`
+        * `git reset filename`撤回`git add`操作。
+    * `git commit filename`
 
 ### Git图形化界面操作
 [Git](#git)
