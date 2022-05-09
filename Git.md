@@ -15,7 +15,7 @@
             * `git config`
             * example:`git config user.name tom_pro`
             `git config user.email Email`
-            * 信息保存在`./.git/config`目录下
+            * 信息保存在`./.git/config`目录下`.git`是一个隐藏目录
         * 系统用户级别：登录当前操作系统的用户范围
             * `git config --global`
             * example:`git config --global user.name tom_glb`
@@ -29,6 +29,7 @@
     * `git add filename`
         * `git reset filename`撤回`git add`操作。
     * `git commit filename`
+        * `git commit -m "modify notion" filename`可以跳过`vim`编辑器阶段
 
 ### Git图形化界面操作
 [Git](#git)
