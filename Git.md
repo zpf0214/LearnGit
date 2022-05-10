@@ -29,9 +29,22 @@
     * `git add filename`
         * `git reset filename`撤回`git add`操作。
         * 如果是修改已经存在的文件，可调过这一步
-        
+
     * `git commit filename`
         * `git commit -m "modify notion" filename`可以跳过`vim`编辑器阶段
+4. 查看历史版本
+    * `git log`查看所有提交的版本的所有信息，`HEAD`（链表指针）指向当前版本。多屏显示的控制方式：
+        * 空格向下翻页
+        * b向上翻页
+        * q退出
+    * `git log --pretty=oneline`以一行的方式显示（一般IDE的git插件显示记录是非常方便的）
+        * ==`git log --oneline`
+    * `git reflog`会打印出指针以及每个版本的链表节点的位置
 
+5. 前进后退历史版本的指令及其原理
+    * `git reset --hard hashvalue`
+    * `git reset --hard HEAD^`只能一步一步往后查看
+    * `git reset --hard HEAD~n`表示后退n步
+    * `git help reset`查看reset指令的参数如`--hard --mixed --hard`等
 ### Git图形化界面操作
 [Git](#git)
