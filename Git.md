@@ -6,7 +6,7 @@
 1. Git本地库初始化：`git init`
 2. 设置签名：
     * 形式：
-        * 有户名
+        * 用户名
         * Email地址
     * 作用：区分不同开发人员的身份
     * 辨析：这里设置的签名和登录远程库（代码托管中心）的账号、密码没有任何关系
@@ -28,6 +28,8 @@
 3. 提交操作：
     * `git add filename`
         * `git reset filename`撤回`git add`操作。
+        * 如果是修改已经存在的文件，可调过这一步
+        
     * `git commit filename`
         * `git commit -m "modify notion" filename`可以跳过`vim`编辑器阶段
 
