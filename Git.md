@@ -42,6 +42,7 @@
     * `git reflog`会打印出指针以及每个版本的链表节点的位置
 
 5. 前进后退历史版本的指令及其原理
+***（这一节没有吃透，需要再看一遍）***
     * `git reset --hard hashvalue`
     * `git reset --hard HEAD^`只能一步一步往后查看
     * `git reset --hard HEAD~n`表示后退n步
