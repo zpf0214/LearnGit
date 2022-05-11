@@ -42,10 +42,16 @@
     * `git reflog`会打印出指针以及每个版本的链表节点的位置
 
 5. 前进后退历史版本的指令及其原理
-***（这一节没有吃透，需要再看一遍）***
+***~~（这一节没有吃透，需要再看一遍）~~***
     * `git reset --hard hashvalue`
     * `git reset --hard HEAD^`只能一步一步往后查看
     * `git reset --hard HEAD~n`表示后退n步
     * `git help reset`查看reset指令的参数如`--hard --mixed --hard`等
+6. 比较文件
+    * `git diff filename`默认和缓存区比较
+    * `git diff HEAD filename`：当工作区文件添加到缓存区后，可以使用该命令使工作区与本地库比较
+7. 分支管理
+    *在开发过程中不想对master造成污染，就需要使用分支管理，最后使用指令`merge`合并到master*
+
 ### Git图形化界面操作
 [Git](#git)
