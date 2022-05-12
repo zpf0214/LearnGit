@@ -50,8 +50,13 @@
 6. 比较文件
     * `git diff filename`默认和缓存区比较
     * `git diff HEAD filename`：当工作区文件添加到缓存区后，可以使用该命令使工作区与本地库比较
-7. 分支管理
+7. [分支管理](https://www.runoob.com/git/git-branch.html "runoob:分支管理")
     *在开发过程中不想对master造成污染，就需要使用分支管理，最后使用指令`merge`合并到master*
+* 创建分支：`git branch`
+* 查看分支：`git branch -v`
+* 切换分支：`git checkout branch_name`
+* 合并分支：``
+* 解决冲突：``
 
 ### Git图形化界面操作
 [Git](#git)
