@@ -1,8 +1,13 @@
 # Git
+
 [Git命令行操作](#git命令行操作)
+[Git基本原理](#git基本原理)
 [Git图形化界面操作](#git图形化界面操作)
-### Git命令行操作
+
+## Git命令行操作
+
 [Git](#git)
+
 1. Git本地库初始化：`git init`
 2. 设置签名：
     * 形式：
@@ -51,14 +56,26 @@
     * `git diff filename`默认和缓存区比较
     * `git diff HEAD filename`：当工作区文件添加到缓存区后，可以使用该命令使工作区与本地库比较
 7. [分支管理](https://www.runoob.com/git/git-branch.html "runoob:分支管理")
+
     *在开发过程中不想对master造成污染，就需要使用分支管理，最后使用指令`merge`合并到master*
+
 * 创建分支：`git branch`
 * 查看分支：`git branch -v`
 * 切换分支：`git checkout branch_name`
 * 合并分支：
-    * 1.切换到接收修改的分支（合并其它分支，增加新内容）
-    * 2.
-* 解决冲突：``
+
+  * 1.切换到接收修改的分支（合并其它分支，增加新内容）`git checkout branch_name`
+  * 2.`git merge branch_name`
+* 解决冲突：
+  * 需要手动删除合并产生的特殊符号
+  * `git add fielname`
+  * `git commit -m`,不能添加文件名(`git commit -m "log" file name`会产生错误)
+* [删除冗余分支](https://blog.csdn.net/qq_34234087/article/details/99008695 "CSDN:git删除不需要的分支")：`git branch -d filename`
+
+## Git基本原理
+
+[Git](#git)
 
 ### Git图形化界面操作
+
 [Git](#git)
