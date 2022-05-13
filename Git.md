@@ -76,6 +76,34 @@
 
 [Git](#git)
 
+1. Git底层采用的是SHA-1算法([哈希算法](https://zhuanlan.zhihu.com/p/383274860 "简单科普文章"))
+
+2. Git文件管理机制：Git把数据看做是小型文件系统的一组[快照](https://zhuanlan.zhihu.com/p/431263731 "快照简单科普")，每次提交更新时Git都会对当前的全部文件制作一个快照并保存这个快照索引。为了高效，如果文件没有修改，Git不再重新储存该文件，而是只保留一个链接指向之前存储的文件。所以Git的工作方式可以称之为快照流。
+
+3. [Git分支管理](https://zhuanlan.zhihu.com/p/38772378 "实际项目中如何使用Git做分支管理 - shusheng007的文章 - 知乎")创建分支是新建一个指向当前文件的指针，切换分支是切换指针
+
+## [GitHub连接远程库](https://www.runoob.com/git/git-remote-repo.html)
+
+1. [GitHub简明教程](https://www.runoob.com/w3cnote/git-guide.html "菜鸟教程")
+
+2. `git remote -v`:查看是否连接了远程库
+
+3. `git remote add [createAbbrevation] URL`:添加远程库
+
+4. `git push [createAbbrevation] branch`:本地上传到远程库
+
+5. `git clone URL`:远程库下载到本地
+
+    * 完整的将远程库下载到本地
+
+    * 自动创建远程地址别名[createAbbrevation]
+
+    * 自动初始化本地库
+
+6. [团队合作部分略，以后用到了再来补全](https://www.runoob.com/git/git-remote-repo.html "菜鸟教程")
+
+7. 忽略特定文件：`*.gitignore`中配置，GitHub提供了对应语言的模板
+
 ### Git图形化界面操作
 
 [Git](#git)
